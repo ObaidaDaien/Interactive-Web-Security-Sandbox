@@ -8,4 +8,7 @@
 - Yousef Mohammad Alzoubi
 
 ## Selected Vulnerabilities
-We will add the selected topics to this README as soon as possible, update the GitHub repository immediately, and notify the staff member once the update is complete.
+This project focuses on the analysis, demonstration, and remediation of the following web security vulnerabilities:
+- Client-Side URL Redirect
+- Improper Origin Validation in postMessage
+- Regular Expression Denial of Service (ReDoS)
