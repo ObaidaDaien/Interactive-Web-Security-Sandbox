@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hands-on web security sandbox with three interactive browser security labs.">
+  <meta name="theme-color" content="#002623">
+  <title>Interactive Web Security Sandbox</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-copy"><strong>INTERACTIVE WEB</strong><span>SECURITY SANDBOX</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#labs">Labs</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="button button-small button-primary nav-action" href="#labs">Explore labs <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="home-hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark"></span> BROWSER-BASED SECURITY LEARNING</p>
+          <h1>Understand the flaw.<br><span>See what changes.</span></h1>
+          <p class="hero-lede">Learn web security by using small, isolated applications. Choose a payload, run the test, inspect the code, and compare the vulnerable behavior with the fixed version.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#labs">Open the labs <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#how-it-works">How it works</a>
+          </div>
+          <div class="hero-highlights" aria-label="Project details">
+            <div><strong>03</strong><span>hands-on labs</span></div>
+            <div><strong>02</strong><span>code versions</span></div>
+            <div><strong>100%</strong><span>local demonstrations</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of a security testing workspace">
+          <div class="hero-art-glow"></div>
+          <div class="preview-window">
+            <div class="preview-window-bar">
+              <div class="window-controls"><i></i><i></i><i></i></div>
+              <span>lab-workbench.js</span>
+              <span class="window-state"><i></i> READY</span>
+            </div>
+            <div class="preview-window-body">
+              <div class="preview-label">TEST RESULT</div>
+              <div class="preview-result-row"><span class="preview-result-icon">✓</span><div><strong>Same input. Safer result.</strong><span>Compare both code versions</span></div></div>
+              <div class="preview-mode-row"><span class="preview-mode active">Vulnerable</span><span class="preview-mode">Fixed</span></div>
+              <div class="preview-lines"><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="hero-note hero-note-top"><span class="note-symbol">{ }</span><span><strong>Inspect the code</strong><small>Find the unsafe decision</small></span></div>
+          <div class="hero-note hero-note-bottom"><span class="note-symbol note-check">✓</span><span><strong>Run the same test</strong><small>Verify the fix</small></span></div>
+          <div class="hero-orbit-label">LEARN<br>BY TESTING</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading section-heading-centered">
+          <p class="eyebrow">BEFORE YOU START</p>
+          <h2>How the sandbox <span>works</span></h2>
+          <p>Every lab follows a safe attack story: an attacker prepares input, a victim or target application receives it, and the result explains what changed after the fix.</p>
+        </div>
+        <div class="how-grid">
+          <article class="how-card">
+            <span class="how-number">01</span>
+            <span class="how-icon" aria-hidden="true">⌕</span>
+            <h3>Choose a lab</h3>
+            <p>Open one of the three security topics and read what the weakness means.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-number">02</span>
+            <span class="how-icon" aria-hidden="true">{ }</span>
+            <h3>Choose a version</h3>
+            <p>Switch between Vulnerable and Fixed, then run the same attacker payload again.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-number">03</span>
+            <span class="how-icon" aria-hidden="true">↗</span>
+            <h3>Load a payload</h3>
+            <p>Select a test input. It is placed into the relevant field in the lab application.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-number">04</span>
+            <span class="how-icon" aria-hidden="true">✓</span>
+            <h3>Run and compare</h3>
+            <p>Run the test, observe the application, then use the same input against the fixed version.</p>
+          </article>
+        </div>
+        <div class="how-tip"><span class="tip-icon">i</span><p><strong>Good to know:</strong> These are isolated teaching demonstrations. Reserved example domains and synthetic data are used; no real website or personal account is targeted.</p></div>
+      </div>
+    </section>
+
+    <section class="section labs-section" id="labs">
+      <div class="container">
+        <div class="section-heading labs-heading">
+          <div><p class="eyebrow">THE LAB COLLECTION</p><h2>Choose what you want <span>to explore.</span></h2></div>
+          <p>Start with the topic that interests you. Each lab contains a small application that you can test, inspect, and compare.</p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card lab-card-redirect">
+            <div class="lab-card-top"><span class="lab-index">LAB 01</span><span class="level level-easy">EASY–MEDIUM</span></div>
+            <div class="lab-card-icon" aria-hidden="true">↗</div>
+            <p class="lab-category">NAVIGATION &amp; TRUST</p>
+            <h3>Client-Side URL Redirect</h3>
+            <p class="lab-card-description">See what happens when an untrusted address controls where a browser is sent.</p>
+            <div class="lab-card-bottom"><span>WSTG-CLNT-04 <b>·</b> CWE-601</span><a href="labs/lab1.html">Open lab <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="lab-card lab-card-message">
+            <div class="lab-card-top"><span class="lab-index">LAB 02</span><span class="level level-medium">MEDIUM</span></div>
+            <div class="lab-card-icon" aria-hidden="true">⇄</div>
+            <p class="lab-category">WINDOW COMMUNICATION</p>
+            <h3>postMessage Origin Validation</h3>
+            <p class="lab-card-description">Compare messages from trusted and untrusted senders in a sender-and-receiver demo.</p>
+            <div class="lab-card-bottom"><span>WSTG-CLNT-11 <b>·</b> CWE-940</span><a href="labs/lab2.html">Open lab <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="lab-card lab-card-regex">
+            <div class="lab-card-top"><span class="lab-index">LAB 03</span><span class="level level-challenge">TEAM CHALLENGE</span></div>
+            <div class="lab-card-icon regex-icon" aria-hidden="true">.*</div>
+            <p class="lab-category">INPUT PROCESSING</p>
+            <h3>Regular Expression Denial of Service</h3>
+            <p class="lab-card-description">Observe expensive regular-expression matching and compare it with a safer pattern.</p>
+            <div class="lab-card-bottom"><span>WSTG-INJT-28 <b>·</b> CWE-1333</span><a href="labs/lab3.html">Open lab <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-panel">
+        <div class="about-emblem" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="about-text"><p class="eyebrow">ABOUT THE PROJECT</p><h2>A safe place to <span>learn by doing.</span></h2><p>This project demonstrates three web security weaknesses through small browser-based applications. It uses HTML, CSS, and JavaScript only. There is no backend, login system, or database.</p></div>
+        <div class="about-stack"><div><strong>HTML</strong><span>Structure</span></div><div><strong>CSS</strong><span>Design</span></div><div><strong>JS</strong><span>Behavior</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-copy"><strong>INTERACTIVE WEB</strong><span>SECURITY SANDBOX</span></span></a><p>Built for learning. Designed for safe testing.</p><a class="back-top" href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
