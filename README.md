@@ -9,7 +9,7 @@ This project is a browser-based learning space with three interactive web securi
 - Regular Expression Denial of Service (ReDoS)
 
 ## Live Demo
-- Link: https://obaidadaien.github.io/Interactive-Web-Security-Sandbox/
+- [Live Demo](https://obaidadaien.github.io/Interactive-Web-Security-Sandbox/)
 
 ## Technologies
 - HTML
